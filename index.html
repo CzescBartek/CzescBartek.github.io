@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="tak.css">
-    <script src="tak.js"></script>
+    
+    
 </head>
+<style>
+    .napis1{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
+
+.napis2{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
+
+.active {
+    opacity: 100%;
+}
+
+.napis3{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
+</style>
 <body>
     <div class="nosiema">
 <img class="tlo" src="piczek bmp.png" alt="">
@@ -16,6 +42,42 @@
 <img class="napis2"src="napis czerwony3.png" alt="">
 
     </div>
+
+    <script>
+    
+document.addEventListener('DOMContentLoaded', () => {
+    const siema1 = document.querySelector('.napis1');
+    const siema2 = document.querySelector('.napis2 ');
+    const siema3 = document.querySelector('.napis3');
+    console.log(siema2);
+
+    
+
+    const myInterval = setInterval(zmiana, 400);
+
+function zmiana() {
+
+    
+
+     if (siema1.classList.contains('active')){
+        siema1.classList.remove('active');
+        siema2.classList.add('active');
+     }
+
+     else if (siema2.classList.contains('active'))
+     {
+        siema2.classList.remove('active');
+        siema3.classList.add('active');
+        
+    }
+    else if (siema3.classList.contains('active'))
+    {
+        siema3.classList.remove('active');
+        siema1.classList.add('active');
+    }
+    }
+}) 
+    </script>
    
 </body>
 </html>
