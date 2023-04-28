@@ -1,0 +1,24 @@
+.napis1{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
+
+.napis2{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
+
+.active {
+    opacity: 100%;
+}
+
+.napis3{ 
+    position: absolute;
+    top: 137px;
+    left: 392px;
+    opacity: 0%;
+}
